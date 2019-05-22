@@ -4,7 +4,8 @@
   "description": "Example of use of passport-jwt",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "start-dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,10 @@
     "express": "^4.16.4",
     "mongodb": "^3.2.5",
     "mongoose": "^5.5.10",
-    "passport": "^0.4.0"
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
   }
 }

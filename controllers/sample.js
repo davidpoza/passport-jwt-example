@@ -1,10 +1,13 @@
 'use strict'
 
 let controller = {
-    sample: (req,res)=>{
-        res.send("Ok");
-    }
-       
+    unprotected: (req,res)=>{
+        res.send("Ok. ruta sin proteger");
+    },
+    protected: (req,res)=>{
+        console.log("caso protected");
+        res.send(`Ok ${req.user.first_name} ${req.user.last_name}, bienvenido a la ruta protegida.`);
+    },
 
 }
 

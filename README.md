@@ -8,7 +8,7 @@ MONGO_URI=mongodb+srv://user:password@server/db
 # secret for encryption of jwt signature
 JWT_SECRET=yoursecret
 
-# number of rounds for encryption of jwt signature
+# number of rounds for Blowfish algorithm for hashing user password
 BCRYPT_ROUNDS=12
 
 # lifetime of the token (in seconds)
